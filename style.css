@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Gotham';
-    src: url('./Gotham/Gotham-Light.otf');
-}
-
 :root{
     --primary-color: #40106F;
     --primary-color-highlight: #FFF;
@@ -10,12 +5,12 @@
 }
 
 .col-6, .col-4 {
-    height: auto; /* Ensure columns are only as tall as their content */
+    height: auto; 
 }
 
 img {
-    max-width: 100%; /* Keep images responsive */
-    height: auto; /* Maintain image aspect ratio */
+    max-width: 100%; 
+    height: auto; 
 }
 
 /*Hero Styling*/
@@ -35,8 +30,7 @@ img {
 
 .hero_content h2{
     font-size: 60px;
-    margin-top: 3rem;
-    
+    margin-top: 3rem; 
 }
 
 .hero_content h3{
@@ -64,6 +58,7 @@ img {
 .hero_content button:hover{
     color: #40106F;
 }
+
 .p_purple p{
     color: #40106F;
     font-size: 16px;
@@ -79,17 +74,15 @@ img {
     color: #40106F;
     font-size: 60px;
 }
+
 .first_section p{
     font-size: 20px;
     color: #0a1a44;
 }
 
-
 .google_play{
     display: block;
     margin-left: 5rem;
-    /*margin-right: auto;*/
-    
 }
 
 .first_section{
@@ -139,17 +132,17 @@ img {
 }
 
 /*Third Section of page*/
-.where_is_adressed{
+.where_is_addressed{
     margin-top: 10rem;
     color: #40106F;
 }
 
-.where_is_adressed h2{
+.where_is_addressed h2{
     font-size: 40px;
     font-weight: bold;
 }
 
-.where_is_adressed h3{
+.where_is_addressed h3{
     font-size: 35px;  
 }
 
@@ -163,6 +156,7 @@ img {
     font-size: 19px;
 }
 
+/*Android POS*/
 .android_pos{
     background-image: url(./img/backgrounds/Background2.png);
     background-position: center;
@@ -224,10 +218,6 @@ input[type=text]{
     font-size: 18px;
     font-weight: bold;
     border-radius: 20px;
-    /*padding-left: 2rem;
-    padding-right: 2rem;
-    width:10rem;
-    margin-top: 1.5rem;*/
     margin-top: 2rem;
 }
 
@@ -239,20 +229,12 @@ form .row{
     margin-bottom: 3rem;
 }
 
-
-
-/*@media (max-width: 544px){
-    .hero_content img{
-        /*width: 500px;
-    }
-
-}*/
-
+/*Mobile view breakpoint*/
 @media (max-width: 767px){
-    
+    /*Hero Section*/
     .hero_content h2{
-        margin-top: 0.5rem;
         font-size: 50px;
+        margin-top: 1rem;
     }
 
     .hero_content h3{
@@ -263,20 +245,18 @@ form .row{
         font-size: 15px;
     }
 
-    /*where_is_adressed section*/
-    .where_is_adressed h2{
-        margin-top: 3rem;
+    .hero{
+        background-size: 350%;
+        background-position: top center;
+        height: 120vh;
     }
 
-    .where_is_adressed p{
-        margin-top: 1rem;
-        width: 75% !important; 
+    .hero_content img{
+       width: 300px;
     }
+    /*Hero Section End*/
 
-    .p_purple p{
-        margin-top: 3rem;
-    }
-
+    /*First section*/
     .first_section .text_section{
         display: flex;
         flex-direction: column;
@@ -287,6 +267,24 @@ form .row{
         width: 75% !important;
         margin-bottom:3rem;
     }
+    /*First Section End*/
+
+
+    /*where_is_addressed section*/
+    .where_is_addressed h2{
+        margin-top: 3rem;
+    }
+
+    .where_is_addressed p{
+        margin-top: 1rem;
+        width: 75% !important; 
+    }
+
+    .p_purple p{
+        margin-top: 3rem;
+    }
+    /*Where is addressed End*/
+
 
     /*android POS section*/
     .android_pos img{
@@ -300,7 +298,9 @@ form .row{
     .android_pos p{
         width: 75% !important;
     }
+    /*Android Pos End*/
 
+    /*Contact Form section*/
     .contact_form h2{
         text-align: center;
     }
@@ -314,6 +314,13 @@ form .row{
         margin-bottom: 0rem;
     }
 
+    form .form_col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     input[type=text]{
         width: 60%;
         margin-bottom: 1rem ;
@@ -322,19 +329,6 @@ form .row{
     .consent_check{
         margin-top: 1rem;
     }
-
-    .hero{
-        background-size: 400%;
-        background-position: top center;
-        height: 120vh;
-    }
-
-    .hero_content img{
-       width: 300px;
-
-    }
-
-
-
+    /*Contact Form End*/
 }
 
