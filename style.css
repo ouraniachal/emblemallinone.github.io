@@ -299,6 +299,10 @@ form .row{
         width: 75% !important;
     }
 
+    .contact_form h2{
+        text-align: center;
+    }
+
     .contact_form p{
         text-align: center;
         width: 75%;
