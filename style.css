@@ -251,7 +251,7 @@ form .row{
 @media (max-width: 767px){
     
     .hero_content h2{
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         font-size: 50px;
     }
 
